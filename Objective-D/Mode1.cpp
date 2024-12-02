@@ -54,7 +54,8 @@ void Mode1::MouseMotionController(HWND hWnd) {
 	mouse.UpdateMousePosition(hWnd);
 
 	// 객체로 마우스 모션 입력
-	scene.InputMouseMotion(hWnd, "test_object");
+	scene.InputMouseMotion(hWnd, "control");
+	scene.InputMouseMotion(hWnd, "cam_controller");
 }
 
 // 마우스 버튼 클릭 이벤트를 지정된 객체 포인터로 전달한다

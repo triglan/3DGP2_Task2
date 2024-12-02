@@ -15,8 +15,8 @@ public:
 		//ObjectAlpha = 1.0f;
 		//camera.SetToDefaultMode();
 		//SetColor(0.0, 0.0, 0.0);
-		FlipTexture(FLIP_TYPE_NONE);
-
+		FlipTexture(RENDER_TYPE_3D_STATIC);
+		FlipTexture(FLIP_TYPE_V);
 		Render3D(SkyboxMesh, SkyboxTex);
 	}
 };

@@ -10,7 +10,7 @@ void Camera::Update(float FT) {
 	switch (Mode) {
 	case CamMode::TRACK_MODE:
 		if (auto helicopter = scene.Find("control"); helicopter) {
-			TrackOffset(helicopter->GetPosition(), helicopter->GetVectorSet(), XMFLOAT3(3.0, 5.0, -1000.0), FT);
+			TrackOffset(helicopter->GetPosition(), helicopter->GetVectorSet(), XMFLOAT3(0.0, 0.0, -10.0), FT);
 			//Track(helicopter->GetPosition(), helicopter->GetUp(), helicopter->GetRight(), helicopter->GetLook(),FT);
 			//std::cout << GetOffset().x << "  y : " << GetOffset().y << "  z :  " << GetOffset().z << std::endl;
 			//std::cout << camera.GetPosition().x << "  y : " << camera.GetPosition().y << "  z :  " << camera.GetPosition().z << std::endl;
